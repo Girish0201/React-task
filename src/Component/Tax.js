@@ -4,8 +4,8 @@ import { MdAddBox } from "react-icons/md";
 const Tax = () => {
   return (
     <div>
-      <div className="h-14 bg-gradient-to-r from-teal-400 to-teal-500 rounded-t-md mt-4 flex justify-between px-3 py-2 items-center text-white">
-            <h4 className='text-whiteafter:width-100 after:relative after:bottom-2 after:border-bottom-2'>Surcharge</h4>
+      <div className="h-14 bg-[#00A89E] rounded-t-md mt-4 flex justify-between px-3 py-2 items-center text-white">
+            <h4 className='text-white text-md font-medium'>Surcharge</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 size-30 bg-transparent' />
         </div>
         <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white '>

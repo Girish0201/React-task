@@ -9,14 +9,11 @@ import { MdPersonAddAlt } from "react-icons/md";
 
 
 
-const NegotitationDetails = ({visible,onClose}) => {
-    if (!visible) return null;
+const NegotitationDetails = () => {
+
   return (
-    <div className=' insert-0 bg-black bg-opacity-30 backdrop-blur-sm h-auto'>
-        <div className = "flex justify-end items-center absolute top-1 right-0">
-            <button className='rounded-xl bg-black text-white w-6 h-6' onClick = {() => onClose()}>X</button>
-          </div>
-      <div className=' bg-slate-100  px-5 py-10 rounded-lg w-screen h-auto overflow-y-auto mt-25 mb-10 ml-8 mr-8'>
+
+    <div className=' bg-slate-100  px-5 py-10 rounded-lg w-screen h-screen overflow-y-auto mt-25 mb-10 ml-8 mr-8'>
 
       <h1 className='font-black text-2xl  mb-8 text-black' >Negotitation Details</h1>
         <div className='w-full border-slate-200 border-2 rounded-lg h-24'>
@@ -58,12 +55,15 @@ const NegotitationDetails = ({visible,onClose}) => {
             <input type = "text" className=' bg-white rounded-lg focus:outline-none border-slate-50 p-4  h-10 mr-3 ' placeholder='Vendor' />
             <MdPersonAddAlt className='text-3xl' />
         </div>
-        <Services />
-        <Surcharge />
-        <Tax />
-        <Activity />
+        <div className='flex flex-col'>
+            <Services />
+             <Surcharge />
+             <Tax />
+            <Activity />
+        </div>
+
      </div>
-    </div>
+
 
   )
 }
