@@ -20,10 +20,10 @@ const Tax = () => {
   return (
     <div>
       <div className="h-14 bg-[#00A89E] rounded-t-md mt-4 flex justify-between px-3 py-2 items-center text-white w-full sm:w-auto">
-            <h4 className='text-white text-md font-medium'>Surcharge</h4>
+            <h4 className='text-white text-md font-medium'>Tax</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 size-30 bg-transparent' />
         </div>
-        <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white w-full sm:w-auto sm:overflow-auto'>
+        <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white w-full sm:w-auto sm:overflow-x-auto md:overflow-none'>
             <table className='whitespace-nowrap p-3'>
                 <thead className='h-12 border-y-2 w-full sm:auto' >
                     <tr >

@@ -18,7 +18,7 @@ const Services = () => {
             <h4 className='text-white '>Services</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 rounded-md bg-teel-500 focus:outline-none' />
         </div>
-         <div className='w-full rounded-md border-2 border-slate-200  bg-white p-2 '>
+         <div className='w-full rounded-md border-2 border-slate-200  bg-white p-2 sm:overflow-x-auto md:overflow-none'>
             <table>
                 <thead >
                     <tr className='h-12 border-b-2 w-full '>

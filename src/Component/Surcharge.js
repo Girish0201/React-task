@@ -22,7 +22,7 @@ const Surcharge = () => {
             <h4 className='text-white '>Surcharge</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 rounded-md bg-teel-500 focus:outline-none' />
         </div>
-        <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white'>
+        <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white sm:overflow-x-auto'>
             <table className='whitespace-nowrap p-3'>
                 <thead className='h-12 border-y-2' >
                     <tr className=''>

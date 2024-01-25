@@ -42,7 +42,7 @@ const Header = () => {
 
             <div className="text-black w-auto text-sm font-normal  "></div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ml-3">
             <nav className="bg-white overflow-x-scroll h-full w-full flex items-center hover:text-black space-x-4">
               {navItems.map((item, index) => (
                 <a
