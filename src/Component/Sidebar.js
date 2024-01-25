@@ -42,7 +42,7 @@ const handleOutsideClick = (e) => {
         aria-label="Sidebar"
       >
 
-        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800 mt-3">
           <a
             href="https://flowbite.com/"
             className="flex items-center ps-2.5 mb-5"

@@ -28,15 +28,16 @@ const Searchtable = () => {
 
   return (
     <>
-      <div className="md:relative top-[6rem] left-[13rem] mt-3  sm:rounded-lg border-2 p-2 m-3 ">
-        <nav className="bg-white overflow-x-auto md:h-[55%] h-[40%] w-full flex items-center hover:text-black space-x-4">
-          {navItems.map((item, index) => (
+      <div className="md:relative top-[6rem] left-[13rem] mt-3  sm:rounded-lg border-2 p-2 m-3 h-54 w-auto ">
+        <nav className="bg-white overflow-x-auto  w-full flex justify-between items-center hover:text-black space-x-4">
+         <div>
+            {navItems.map((item, index) => (
             <a
               key={index}
               href="#"
               className={`text-[#B2B2B2] ${
                 activeNavItem === index ? "underline-offset-4" : ""
-              } hover:text-black whitespace-nowrap flex-shrink-0`}
+              } hover:text-black whitespace-nowrap flex-shrink-0 px-2`}
               onMouseEnter={() => setActiveNavItem(index)}
               onMouseLeave={() => setActiveNavItem(null)}
               onClick={() => handleNavItemClick(index)}
@@ -44,6 +45,7 @@ const Searchtable = () => {
               {item}
             </a>
           ))}
+         </div>
 
           <button className="flex whitespace-nowrap items-center gap-2 bg-[#00A89E] p-3 rounded-xl text-white">
             Fliter
@@ -206,7 +208,7 @@ const Searchtable = () => {
           {scrollIntems.map((item,index)=>(
             <button
             key={index}
-            className="buttonStyle whitespace-nowrap text-black bg-gray-200 rounded-lg"
+            className="buttonStyle whitespace-nowrap text-black bg-gray-200 rounded-lg p-2"
             onClick={() => {}}
           >
             {item}

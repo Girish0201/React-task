@@ -4,10 +4,17 @@ import { CiEdit } from "react-icons/ci";
 import { MdAddBox } from "react-icons/md";
 
 const Services = () => {
+
+    const tableValue = [
+        "Republic service of jackson,ms#823",
+        "Republic service of jackson,ms#823",
+        "Republic service of jackson,ms#823",
+        "Republic service of jackson,ms#823",
+    ]
   return (
 
     <div className='flex flex-col '>
-         <div className="h-14 bg-[#00A89E] rounded-t-md  flex justify-between px-3 py-2 items-center text-white">
+        <div className="h-14 bg-[#00A89E] rounded-t-md  flex justify-between px-3 py-2 items-center text-white">
             <h4 className='text-white '>Services</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 rounded-md bg-teel-500 focus:outline-none' />
         </div>
@@ -46,283 +53,85 @@ const Services = () => {
                     </tr>
                 </thead>
                 <tbody className=' text-center  px-2 py-2 w-full sm:auto'>
-                    <tr className='h-24 border-y-2'>
-                        <td></td>
-                        <td className='flex items-center text-center p-5'>
-                            <CiEdit />
-                            <MdAddBox />
-                        </td>
-                       <td>
-                            <div className='flex flex-col'>
-                                <span> 1waste container </span>
-                                <span> 2cu yd. </span>
-                                <span> 1x per week(s0003) </span>
-                            </div>
-                        </td>
-                        <td>
-                            Republic service of jackson,ms#823
-                         </td>
-                         <td>
-                            <div className='flex flex-col'>
-                                <span>Quantity-1</span>
-                                <span>Size-</span>
-                                <span>#of times-1</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span> Frequency - Weekly </span>
-                                <span> MRC -
-                                    <span>
+                  {
+                    tableValue.map((item,index) => (
+                        <tr
+                             key={index}
+                             className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 h-24 border-y-2">
 
+                            <td></td>
+                            <td className='flex items-center text-center p-5'>
+                                <CiEdit />
+                                <MdAddBox />
+                            </td>
+                        <td>
+                                <div className='flex flex-col'>
+                                    <span> 1waste container </span>
+                                    <span> 2cu yd. </span>
+                                    <span> 1x per week(s0003) </span>
+                                </div>
+                            </td>
+                            <td>
+                                {item}
+                            </td>
+                            <td>
+                                <div className='flex flex-col'>
+                                    <span>Quantity-1</span>
+                                    <span>Size-</span>
+                                    <span>#of times-1</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div className='flex flex-col'>
+                                    <span> Frequency - Weekly </span>
+                                    <span> MRC -
+                                        <span>
+
+                                        </span>
                                     </span>
-                                </span>
-                                <span>  Service On Sat</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                                <span className='text-red-600'> T</span>
-                                <span className = "text-green-600">F</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span><a href = "#amount" >0.00010.000</a></span>
-                                <span>Avg:@215.41</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                              <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>95.04</span>
-                                <span>619</span>
-                            </div>
-                        </td>
-
-                    </tr>
-                    <tr className='h-24 border-y-2'>
-                        <td></td>
-                        <td className='flex items-center text-center p-5'>
-                            <CiEdit />
-                            <MdAddBox />
-                        </td>
-                       <td>
-                            <div className='flex flex-col'>
-                                <span> 1waste container </span>
-                                <span> 2cu yd. </span>
-                                <span> 1x per week(s0003) </span>
-                            </div>
-                        </td>
-                        <td>
-                            Republic service of jackson,ms#823
-                         </td>
-                         <td>
-                            <div className='flex flex-col'>
-                                <span>Quantity-1</span>
-                                <span>Size-</span>
-                                <span>#of times-1</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span> Frequency - Weekly </span>
-                                <span> MRC -
-                                    <span>
-
-                                    </span>
-                                </span>
-                                <span>  Service On Sat</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                                <span className='text-red-600'> T</span>
-                                <span className = "text-green-600">F</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span><a href = "#amount" >0.00010.000</a></span>
-                                <span>Avg:@215.41</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                              <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>95.04</span>
-                                <span>619</span>
-                            </div>
-                        </td>
-
-                    </tr>
-                   <tr className='h-24'>
-                        <td></td>
-                        <td className='flex items-center text-center p-5'>
-                            <CiEdit />
-                            <MdAddBox />
-                        </td>
-                       <td>
-                            <div className='flex flex-col'>
-                                <span> 1waste container </span>
-                                <span> 2cu yd. </span>
-                                <span> 1x per week(s0003) </span>
-                            </div>
-                        </td>
-                        <td>
-                            Republic service of jackson,ms#823
-                         </td>
-                         <td>
-                            <div className='flex flex-col'>
-                                <span>Quantity-1</span>
-                                <span>Size-</span>
-                                <span>#of times-1</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span> Frequency - Weekly </span>
-                                <span> MRC -
-                                    <span>
-
-                                    </span>
-                                </span>
-                                <span>  Service On Sat</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                                <span className='text-red-600'> T</span>
-                                <span className = "text-green-600">F</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span><a href = "#amount" >0.00010.000</a></span>
-                                <span>Avg:@215.41</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                              <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>95.04</span>
-                                <span>619</span>
-                            </div>
-                        </td>
-
-                    </tr>
-                    <tr className='h-24 '>
-                        <td></td>
-                        <td className='flex items-center text-center p-5'>
-                            <CiEdit />
-                            <MdAddBox />
-                        </td>
-                       <td>
-                            <div className='flex flex-col'>
-                                <span> 1waste container </span>
-                                <span> 2cu yd. </span>
-                                <span> 1x per week(s0003) </span>
-                            </div>
-                        </td>
-                        <td>
-                            Republic service of jackson,ms#823
-                         </td>
-                         <td>
-                            <div className='flex flex-col'>
-                                <span>Quantity-1</span>
-                                <span>Size-</span>
-                                <span>#of times-1</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span> Frequency - Weekly </span>
-                                <span> MRC -
-                                    <span>
-
-                                    </span>
-                                </span>
-                                <span>  Service On Sat</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                                <span className='text-red-600'> T</span>
-                                <span className = "text-green-600">F</span>
-                            </div>
-                        </td>
-                        <td>
-                             <div className='flex flex-col'>
-                                <span><a href = "#amount" >0.00010.000</a></span>
-                                <span>Avg:@215.41</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                              <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>$411.5</span>
-                                <span>$500</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td>
-                            <div className='flex flex-col'>
-                               <span>95.04</span>
-                                <span>619</span>
-                            </div>
-                        </td>
-
+                                    <span>  Service On Sat</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div className='flex flex-col'>
+                                    <span className='text-red-600'> T</span>
+                                    <span className = "text-green-600">F</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div className='flex flex-col'>
+                                    <span><a href = "#amount" >0.00010.000</a></span>
+                                    <span>Avg:@215.41</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div className='flex flex-col'>
+                                <span>$411.5</span>
+                                    <span>$500</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div className='flex flex-col'>
+                                <span>$411.5</span>
+                                    <span>$500</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td>
+                                <div className='flex flex-col'>
+                                <span>95.04</span>
+                                    <span>619</span>
+                                </div>
+                            </td>
                     </tr>
 
+
+                    ))
+                  }
                 </tbody>
             </table>
-         </div>
-
+        </div>
 
     </div>
   )

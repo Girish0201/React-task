@@ -33,9 +33,9 @@ const NegotitationDetails = () => {
     <div className='bg-slate-100  px-5 py-10 rounded-lg w-screen h-auto overflow-y-auto scroll-smooth scrollbar-thin scrollbar-track-transparent mt-25 mb-10 ml-8 mr-8'>
 
       <h1 className='font-black text-2xl  mb-5 text-black' >Negotitation Details</h1>
-        <div className='w-full border-slate-300 border-2 rounded-lg h-24 p-2 '>
-            <div className=' flex justify-between items-center w-full h-11 '>
-                <nav className="h-[55%]  flex items-center hover:text-black space-x-2 mx-3  ">
+        <div className='w-full border-slate-300 border-2 rounded-lg h-30 p-2 '>
+            <div className=' flex justify-between items-center w-full h-11 sm:flex-col md:flex-row '>
+                <nav className="h-[55%]  flex items-center hover:text-black space-x-2 mx-3  sm:mb-2">
                     {navItems.map((item, index) => (
                         <a
                         key={index}
@@ -51,7 +51,7 @@ const NegotitationDetails = () => {
                         </a>
                     ))}
                 </nav>
-                 <ul className='list-none p-0 m-0 flex justify-center items-center '>
+                 <ul className='list-none p-0 m-0 flex justify-center items-center sm:mt-3 sm:text-left md:text-center'>
                     <li className='size-6 rounded-sm focus:outline-none bg-indigo-500 text-white text-centr  mr-2 flex items-center'>
                         <div className='flex items-center p-2'>B</div>
                     </li>
@@ -69,8 +69,8 @@ const NegotitationDetails = () => {
                     </li>
                  </ul>
             </div>
-            <hr className='border-slate-300 sm:none'  />
-            <ul className='list-none flex items-center h-11' >
+            <hr className='md:border-slate-300 sm:none'  />
+            <ul className='list-none flex items-center h-11 sm:mt-2 ' >
                 <li className='text-emerald-700 pl-5 font-bold'>Active</li>
                 <li className='text-slate-500 pl-3'>Extras</li>
                 <li className='text-slate-500 pl-3'>Archived</li>
@@ -80,10 +80,10 @@ const NegotitationDetails = () => {
             <input type = "text" className=' bg-white rounded-lg focus:outline-none border-slate-50 p-4  h-10 mr-3 ' placeholder='Vendor' />
             <MdPersonAddAlt className='text-3xl' />
         </div>
-        <Services />
-        <Surcharge />
-        <Tax />
-        <Activity />
+            <Services />
+            <Surcharge />
+            <Tax />
+            <Activity />
 
 
 

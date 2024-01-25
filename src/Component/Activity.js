@@ -9,8 +9,8 @@ const Activity = () => {
            <h4 className='text-white text-md p-4  border-white  underline underline-offset-8' >Main Info</h4>
            <h4 className='text-white text-lg  '>Activity</h4>
         </div>
-        <div className='w-full rounded-sm border-1 border-slate-200 h-64 bg-white px-5 py-4 mb-2'>
-            <div className='flex'>
+        <div className='w-full rounded-sm border-1 border-slate-200 h-64 bg-white px-5 py-4 mb-2 '>
+            <div className='flex sm:flex-col md:flex-row'>
                 <div className='flex flex-col mr-8'>
                     <label className='p-2 text-sm font-semibold'>Contact Region Date</label>
                     <input className='w-46 border-x-gray-300 focus:outline-none bg-slate-200 text-black p-3 rounded-md text-slate-600' placeholder='08/14/2023' />
@@ -42,9 +42,9 @@ const Activity = () => {
 
 
             <div className='flex  px-2 py-4 '>
-                <input type="text" placeholder='Comments' className='w-3/5 h-36 border-x-gray-300 focus:outline-none bg-slate-200 text-black p-3 rounded-md  text-left ' />
+                <input type="text" placeholder='Comments' className='w-3/5 h-36 border-gray-300 focus:outline-none bg-slate-200 text-black p-3 rounded-md  text-left ' />
                 <div className='flex flex-col ml-5'>
-                    <div className = "w-52 flex justify-between border-x-gray-300 focus:outline-none bg-slate-200 text-black p-3 rounded-md text-slate-600 mb-8">
+                    <div className = "w-52 flex justify-between  focus:outline-none bg-slate-200 text-black p-3 rounded-md text-slate-600 mb-8">
 
                         <select className='bg-slate-200 text-black border-none focus:outline-none  pr-20'>
                           <option>Status</option>
