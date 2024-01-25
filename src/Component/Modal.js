@@ -1,15 +1,21 @@
+//
+
 import React from "react";
 import NegotitationDetails from "./NegotitationDetails";
+import Services from "./Services";
+import Surcharge from "./Surcharge";
+import Tax from "./Tax";
+import Activity from "./Activity";
 
 const Modal = ({ isOpen, onClose }) => {
   return (
     <>
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center ">
+        <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="fixed inset-0 bg-black opacity-50"></div>
-          <div className="bg-white p-4 rounded-lg z-10 w-70vw h-full overflow-y-auto">
+          <div className="bg-slate-200 p-4 rounded-lg z-10 w-70vw h-full overflow-y-auto">
             <button
-              className="absolute top-5 right-14 text-gray-600 z-[100]"
+              className="absolute top-5 right-8 text-gray-600 z-[100]"
               onClick={onClose}
             >
               <svg
@@ -28,8 +34,9 @@ const Modal = ({ isOpen, onClose }) => {
                 />
               </svg>
             </button>
-            <div className="w-full  flex items-center justify-center">
+            <div className="w-full  flex flex-col items-center justify-center px-4">
               <NegotitationDetails />
+
             </div>
           </div>
         </div>

@@ -3,27 +3,34 @@ import { CiEdit } from "react-icons/ci";
 import { MdAddBox } from "react-icons/md";
 
 const Surcharge = () => {
+  const navItems = [
+    "is awarded",
+    "Action",
+    "Line items",
+    "Vender locals",
+    "Taxable",
+    "",
+    "Cap%",
+    "Bid Value",
+    "Total($)",
+    "Saving",
+    "Current per yard",
+  ]
   return (
-    <div>
-      <div className="h-14 bg-gradient-to-r from-teal-400 to-teal-500 rounded-t-md mt-4 flex justify-between px-3 py-2 items-center text-white">
+    <div className='flex flex-col'>
+      <div className="h-14 bg-[#00A89E] rounded-t-md  flex justify-between px-3 py-2 items-center text-white">
             <h4 className='text-white '>Surcharge</h4>
             <MdAddBox className='text-xl border-white size-30 border-2 rounded-md bg-teel-500 focus:outline-none' />
         </div>
         <div className='w-full rounded-md border-2 border-slate-200 h-68 bg-white'>
             <table className='whitespace-nowrap p-3'>
                 <thead className='h-12 border-y-2' >
-                    <tr >
-                        <th className ="px-6"> is awarded</th>
-                        <th className=' px-6 '> Action </th>
-                        <th className='px-10'>Line items</th>
-                        <th className='px-20'>Vender locals</th>
-                        <th className='px-6'>Taxable</th>
-                        <th className=' px-20'>Cap%</th>
-                        <th></th>
-                        <th className='px-6'>Bid Value</th>
-                        <th className='px-6'>Total($)</th>
-                        <th className='px-6'>Saving</th>
-                        <th className='px-6'>Current per yard</th>
+                    <tr className=''>
+                        {
+                          navItems.map(item=> (
+                            <th className='px-8'>{item}</th>
+                          ))
+                        }
                     </tr>
                 </thead>
                 <tbody className='text-center h-20 px-2 py-2'>
@@ -40,15 +47,16 @@ const Surcharge = () => {
                         </div>
 
                     </td>
-                    <td>
+                    <td className='px-4'>
                         Republic service of jackson,ms#823
                     </td>
+                    <td></td>
 
-                    <td> </td>
-                    <td>6.13</td>
                     <td>
                         <span className='text-red-600'> T</span>
                     </td>
+                    <td>6.13</td>
+
                 </tbody>
             </table>
         </div>
@@ -57,4 +65,5 @@ const Surcharge = () => {
 }
 
 export default Surcharge
+
 

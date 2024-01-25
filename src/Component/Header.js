@@ -29,10 +29,10 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed z-50 top-0 left-0 w-full bg-white p-4 border-b-2 border-[#B2B2B2] ">
-        <div className="flex items-center justify-start gap-x-28">
-          <div className=" flex overflow-x-auto items-center justify-between w-auto space-x-2">
-            <div className="w-24 ">
+      <header className="fixed z-50 top-0 left-0 w-full bg-white md:p-4 p-1 border-b-2 border-[#B2B2B2] ">
+        <div className="flex flex-col md:flex-row items-center justify-start gap-1 md:items-center overflow-x-scroll md:justify-start md:gap-x-40">
+          <div className=" flex items-center justify-between w-auto space-x-2">
+            <div className="md:w-24 w-16 mt-2 ">
               <img
                 src="https://vector97.com/wp-content/uploads/2021/03/Vector97_logo.png"
                 alt="vector-img"
@@ -41,7 +41,7 @@ const Header = () => {
 
             <div className="text-black w-auto text-sm font-normal  "></div>
           </div>
-          <nav className="bg-white h-full w-full flex items-center hover:text-black space-x-4">
+          <nav className="bg-white overflow-x-scroll h-full w-full flex items-center hover:text-black space-x-4">
             {navItems.map((item, index) => (
               <a
                 key={index}
